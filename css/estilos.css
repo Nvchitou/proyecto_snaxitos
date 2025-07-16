@@ -7,14 +7,12 @@
   --color-footer-text: #555;
 }
 
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo general */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -22,14 +20,12 @@ body {
   padding: 20px;
 }
 
-/* Encabezado */
 header {
   background-color: #fff;
   padding: 20px;
   border-bottom: 2px solid var(--color-principal);
 }
 
-/* logo y nav */
 .contenedor-header {
   display: flex;
   justify-content: space-between;
@@ -38,13 +34,11 @@ header {
   gap: 15px;
 }
 
-/* Logo */
 header img,
 .logo {
   width: 150px;
 }
 
-/* Navegación */
 .navegacion {
   list-style: none;
   display: flex;
@@ -60,12 +54,10 @@ header img,
   font-weight: bold;
 }
 
-/* Sección productos (solo margen) */
 section.productos {
   margin-top: 2rem;
 }
 
-/* El grid SOLO en el contenedor de cards */
 section.productos .contenedor-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -77,37 +69,75 @@ section.productos .contenedor-cards {
   margin: 0 auto;
 }
 
-/* Cards */
 section.productos .card {
   display: block;
   max-width: 300px;
   width: 100%;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
 
-/* Imagenes en cards */
 section.productos img {
   width: 100%;
   max-height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
-/* Card body */
 section.productos .card-body {
   padding: 1rem;
 }
 
-/* Precio */
 section.productos .precio {
   font-weight: bold;
   color: var(--color-principal);
   margin-top: 0.5rem;
 }
 
-/* Botón */
+.snacks-page h2 {
+  color: #c0392b;
+  text-shadow: 1px 1px 0 #f1c40f;
+}
+.snacks-page .card {
+  border: 2px dashed #e74c3c;
+}
+.snacks-page .btn {
+  background-color: #e74c3c;
+}
+.snacks-page .btn:hover {
+  background-color: #d62c1a;
+}
+
+.bebidas-page h2 {
+  color: #2980b9;
+  text-shadow: 1px 1px 0 #bdc3c7;
+}
+.bebidas-page .card {
+  border: 2px solid #3498db;
+}
+.bebidas-page .btn {
+  background-color: #3498db;
+}
+.bebidas-page .btn:hover {
+  background-color: #217dbb;
+}
+
+.snaxitos {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--color-fondo);
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+}
+
 button {
   padding: 10px 15px;
   background-color: var(--color-principal);
@@ -122,54 +152,31 @@ button:hover {
   background-color: var(--color-principal-hover);
 }
 
-/* Footer */
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
-  background-color: var(--color-footer-bg);
-  color: var(--color-footer-text);
-}
-
-/* Sección portada */
-.snaxitos {
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: var(--color-fondo);
-}
-
-/* Media Queries para móvil */
 @media (max-width: 576px) {
   body {
     padding: 10px;
   }
-
   section.productos {
     margin-top: 1.5rem;
   }
-
   section.productos .contenedor-cards {
     padding: 0;
     gap: 1rem;
   }
-
   button {
     width: 100%;
   }
-
   .contenedor-header {
     flex-direction: column;
     gap: 15px;
   }
-
   .navegacion {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-
   header img,
   .logo {
     width: 120px;
   }
-}
+}/*# sourceMappingURL=estilos.css.map */

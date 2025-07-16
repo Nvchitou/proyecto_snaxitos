@@ -1,0 +1,17 @@
+.snacks-page {
+  h2 {
+    color: #c0392b;
+    text-shadow: 1px 1px 0 #f1c40f;
+  }
+
+  .card {
+    border: 2px dashed #e74c3c;
+  }
+
+  .btn {
+    background-color: #e74c3c;
+    &:hover {
+      background-color: darken(#e74c3c, 10%);
+    }
+  }
+}
