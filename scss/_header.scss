@@ -13,8 +13,19 @@ header {
 }
 
 header img,
-.logo {
-  width: 150px;
+.logo,
+.navbar-brand img {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 576px) {
+  header img,
+  .logo,
+  .navbar-brand img {
+    width: 120px;
+  }
 }
 
 .navegacion {

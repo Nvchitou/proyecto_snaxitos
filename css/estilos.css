@@ -35,10 +35,21 @@ header {
 }
 
 header img,
-.logo {
-  width: 150px;
+.logo,
+.navbar-brand img {
+  width: 160px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+@media (max-width: 576px) {
+  header img,
+  .logo,
+  .navbar-brand img {
+    width: 120px;
+  }
+}
 .navegacion {
   list-style: none;
   display: flex;
@@ -107,7 +118,7 @@ section.productos .precio {
   background-color: #e74c3c;
 }
 .snacks-page .btn:hover {
-  background-color: #d62c1a;
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
 }
 
 .bebidas-page h2 {
@@ -121,7 +132,7 @@ section.productos .precio {
   background-color: #3498db;
 }
 .bebidas-page .btn:hover {
-  background-color: #217dbb;
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
 }
 
 .snaxitos {
@@ -147,9 +158,29 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 button:hover {
   background-color: var(--color-principal-hover);
+}
+
+.btn-dark {
+  background-color: #212529;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.btn-dark:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn-outline-dark {
+  border: 2px solid #212529;
+  color: #212529;
+  transition: all 0.3s ease;
+}
+.btn-outline-dark:hover {
+  background-color: #212529;
+  color: #fff;
 }
 
 @media (max-width: 576px) {
